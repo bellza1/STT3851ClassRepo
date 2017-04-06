@@ -2,11 +2,11 @@
 title: "Assignments STT 3851 - Spring 2017"
 author: "Alan T. Arnholt"
 date: 'Last Updated on: `r format(Sys.time(), "%b %d, %Y at %X")`'
-output:
-  html_document:
-    css: ../CSS/asu.css
+output: 
+  bookdown::html_document2: 
     highlight: textmate
     theme: yeti
+    css: "../CSS/style.css"
 ---
 
 **Jan 17:**
@@ -22,6 +22,12 @@ output:
     + Read this stackoverflow thread details how to create a [minimal R reproducible example](http://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example/5963610#5963610). 
     + Read [How To Ask Questions The Smart Way](http://www.catb.org/~esr/faqs/smart-questions.html) by Eric Raymond and Rick Moen and heed their advice.
     + Read [Getting used to R, RStudio, and R Markdown](https://ismayc.github.io/rbasics-book/)
+    
+    ```{block2, note-text, type='rmdnote'}
+1.  Most due dates are 5 p.m. Friday for [CrowdGrader](https://www.crowdgrader.org/) assignments.
+
+2.  Most [CrowdGrader](https://www.crowdgrader.org/) peer reviews will be due by 11 p.m. on Tuesdays.
+```  
 
 **Jan 19:**
 
@@ -73,7 +79,7 @@ output:
 2. Copy the clone URL to the clipboard.
 3. Click `File > New Project > Version Control > Git`
 4. Paste the clone URL (`https://github.com/YourUserName/STAT-ATA-ASU/STT3851ClassRepo.git`) in the `Repository URL:` box.
-5. Type a name (suggestion `UserNameSTT3851`) in the `Project directory name:` box.
+5. Use the name (`STT3851ClassRepo`) in the `Project directory name:` box.
 6. Change if needed the location in the `Create project as subdirectory of:` box.
 7. Click the `Create Project` box.  You should now have a local copy of the forked repository on your local machine.  Congratulations!  
 * Set the upstream remote in your fork to this repository with the command
@@ -111,7 +117,7 @@ git pull upstream gh-pages
     + Review/read chapter 2 [ISLR](http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Sixth%20Printing.pdf)
     + Watch [Classification Problems and K-Nearest Neighbors](https://www.youtube.com/watch?v=vVj2itVNku4) (15:37)
     + Watch [Lab: Introduction to R](https://www.youtube.com/watch?v=jwBgGS_4RQA) (14:12)
-* Lecture - Bias Variance Tradeoff - Take notes
+* Lecture - Bias Variance Tradeoff - Take notes - [Slides](../Rmarkdown/BiasVarDer.pdf) 
 * Reproduce [Modified Introduction to R](../Rmarkdown/LabChap2.html).  Submit your html file to [CrowdGrader](	https://www.crowdgrader.org/crowdgrader/venues/view_venue/2743) no later than 5 pm Feb 10.
 
 
@@ -158,6 +164,7 @@ git pull upstream gh-pages
     + Watch [Interactions and Nonlinearity](https://www.youtube.com/watch?v=IFzVxLv0TKQ) (14:16)
     + Watch [Lab: Linear Regression](https://www.youtube.com/watch?v=5ONFqIk3RFg) (22:10)
 * Discuss [Chapter 2 and 3 material](../Rmarkdown/Chap2Slides.html)
+* Go over [Bias Variance Graphs again](../Rmarkdown/BiasVarianceGGplot.html)
 * Quiz #6
 
 **Feb 28:**
@@ -172,24 +179,25 @@ git pull upstream gh-pages
     + [Start Project 1](http://www.amstat.org/publications/jse/v16n2/datasets.pardoe.html) - Read the hyperlinked paper.  
     + The data set can be downloaded from http://www.amstat.org/publications/jse/datasets/homes76.dat.txt, while the code book is available from http://www.amstat.org/publications/jse/datasets/homes76.txt
 * Reproduce [Lab: Linear Regression](../Rmarkdown/LabChap3.html).  Submit your html file to [CrowdGrader](https://www.crowdgrader.org/crowdgrader/venues/view_venue/2746) no later than 5 pm Mar 3.
-* Quiz #7
+* Quiz #7 (Chapter 3 Assessment)
 
 
 **Mar 7:**
 
 * [Work on Project 1](../Rmarkdown/DirectionsMHP.html)
+* [Code for class notes](../Rmarkdown/BodyTemperatures.html)
 
 
 **Mar 9:**
 
 * [Work on Project 1](../Rmarkdown/DirectionsMHP.html)
-* Quiz #8
+* Quiz #8 (Chapter 3 Assessment)
 
 **~~Mar 13 - Mar 17:~~ ** **No Class - Spring Break**
 
 **Mar 21:**
 
-* Commit your final changes for Project 1 to your private repository and email the instructor your SHA prior to 10am March 22, 2016.  Use the subject line "Project 1-STT3851-Last_name First_name-SHA#" in your email.
+* Commit your final changes for Project 1 to your private repository and email the instructor your SHA prior to 10am March 22, 2017.  Use the subject line "Project 1-STT3851-Last_name First_name-SHA#" in your email.
 
 
 **Mar 23:**
@@ -296,4 +304,4 @@ Start Project 2
 
 
 
-#[Home Page](http://stat-ata-asu.github.io/STT3851ClassRepo/) - [Syllabus](http://stat-ata-asu.github.io/STT3851ClassRepo/Syllabus/STT3851Spring2017Syllabus.html) - [Piazza](https://piazza.com/appstate/spring2017/stt/home)
+#[Home Page](http://stat-ata-asu.github.io/STT3851ClassRepo/) - [Syllabus](http://stat-ata-asu.github.io/STT3851ClassRepo/Syllabus/STT3851Spring2017Syllabus.html) - [Piazza](https://piazza.com/appstate/spring2017/stt/home) {-}
