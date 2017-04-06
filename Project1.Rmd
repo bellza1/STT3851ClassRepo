@@ -1,0 +1,78 @@
+---
+title: "Lab: Modified Introduction To R"
+author: "Leave this field blank"
+date: '`r format(Sys.time(), "%b %d, %Y")`'
+output: 
+  bookdown::html_document2: 
+    highlight: textmate
+    theme: yeti
+---
+
+```{r, label = "SETUP", echo = FALSE, results= 'hide', message = FALSE, warning = FALSE}
+library(knitr)
+knitr::opts_chunk$set(comment = NA, fig.align = 'center', fig.height = 5, fig.width = 5, prompt = FALSE, highlight = TRUE, tidy = FALSE, warning = FALSE, message = FALSE, tidy.opts=list(blank = TRUE, width.cutoff = 80))
+```
+
+#1 Chapter 2 Lab
+##1.1 Basic Commands
+
+
+R uses functions to perform operations. To run a function called funcname, we type funcname(input1, input2), where the inputs (or arguments) input1 argument and input2 tell R how to run the function. A function can have any number of inputs. For example, to create a vector of numbers, we use the function c() (for concatenate). Any numbers inside the parentheses are joined together. The following command instructs R to join together the numbers 1, 3, 2, and 5, and to save them as a vector named x. When we type x, it gives us back the vector.
+
+```{r}
+x <- c(1, 3, 2, 5) 
+x
+```
+Note that the > is not part of the command; rather, it is printed by R to indicate that it is ready for another command to be entered. We can also save things using = rather than <-:
+```{r}
+x = c(1, 6, 2)
+x
+```
+```{r}
+y = c(1, 4, 3)
+y
+```
+Hitting the up arrow multiple times will display the previous commands, which can then be edited. This is useful since one often wishes to repeat a similar command. In addition, typing ?funcname will always cause R to open a new help file window with additional information about the function funcname.
+
+We can tell R to add two sets of numbers together. It will then add the first number from x to the first number from y, and so on. However, x and y should be the same length. We can check their length using the length() function.
+```{r}
+length(x)
+```
+```{r}
+length(y)
+```
+```{r}
+x + y
+```
+The ls() function allows us to look at a list of all of the objects, such as data and functions, that we have saved so far. The rm() function can be used to delete any that we don’t want.
+```{r}
+ls()
+```
+```{r}
+rm(x, y)
+ls()
+```
+It’s also possible to remove all objects at once:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
