@@ -18,7 +18,7 @@ knitr::opts_chunk$set(comment = NA,  fig.align = 'center', fig.height = 5, fig.w
 Reading the comma separated file from the `Data` directory one level up from where this document is stored using the `read.csv()` function.  Variable descriptions were obtained from [King County, Department of Assessments](http://your.kingcounty.gov/assessor/eRealProperty/ResGlossaryOfTerms.html).  All feature engineering should be done in one the first code chunks of your document.
 
 ```{r, label = "READIN", cache = TRUE}
-housedata <- read.csv("../King_County/housedata.csv", 
+housedata <- read.csv("../Data/housedata.csv", 
                       colClasses = c(id = "character", date = "character", 
                                      yr_built = "character", zipcode = "factor", grade = "factor"))
 housedata$date <- as.Date(housedata$date, "%Y%m%d")
